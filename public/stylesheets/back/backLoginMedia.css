@@ -1,0 +1,30 @@
+@media screen and (max-width:762px){
+    /*标题*/
+    .loginBoxTitle{
+        width:400px;
+        height:70px;
+    }
+    .loginBoxTitle p{
+        font-size: 20px;
+        text-align: center;
+        padding-top: 30px;
+        color:#4EC487;
+        font-weight: bold;
+    }
+    .loginBoxInput{
+        width:400px;
+        height:600px;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid #DEDEDE;
+    }
+    /*登录框样式*/
+    .backForm{
+        display: block;
+        width:200px;
+        height:400px;
+        margin: auto;
+        margin-top: 60px;
+    }
+}

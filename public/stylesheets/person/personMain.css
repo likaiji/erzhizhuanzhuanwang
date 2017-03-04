@@ -1,0 +1,16 @@
+/*person大的div*/
+.person{width:100%;height:auto;margin:0 auto;margin-top:20px;margin-bottom:30px;}
+/*左边部分*/
+.personLeft{width:200px;height:auto;position: absolute;}
+/*标题*/
+.personLeftTitle{width:200px;height:40px;border-bottom: 1px solid #4EC487;}
+.personLeftTitle p{font-size:18px;color:#131313;text-align: center;padding-top: 6px;}
+/*分类*/
+.personLeftUl{width:200px;height:auto;margin-top:10px;}
+.personLeftUl ul li{display: block;width:200px;height:40px;margin-top:10px; text-align: center;}
+.personLeftUl ul li span a{display:block;padding-top: 14px;color:black;text-decoration: none;}
+.leftBox{width:5px;height:40px;position: absolute;}
+
+
+/*右边部分*/
+.personRight{width:800px;height:auto;margin-left: 210px;margin-top:40px;margin-bottom: 5px;}

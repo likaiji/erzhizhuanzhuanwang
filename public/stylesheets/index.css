@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*模态框css*/
+.goodCarsMotai{
+    text-align: center;
+}
+.goodCarsMotai input{
+    border:1px solid #808080;
+}
+
+
+/*轮播部分大区域*/
+.carousel{width:100%;height:350px;background-color: #F7F7F7;margin-top: 5px;}
+/*轮播全部部分*/
+.carouselContent{width:790px;height:340px;margin:auto;position: relative; /*positon:relative;表示相对定位，占空间*/
+             border-radius: 5px 5px;overflow: hidden;} /*表示超出轮播区域的自动隐藏*/
+    /*轮播上方图片部分*/
+    .carouselContent ul{width: 400%; height:100%;
+                        transition: all 0.5s;/*设置图片左右移动效果*//*宽度设为400%，因为有4张图片，可以平铺满*/
+                        }
+    .carouselContent ul li{float: left;
+                            width:25%; /*相对于上一层对的carouselContent ul是25%，四张图片*/
+                            height:100%; overflow: hidden;}
+    .carouselContent ul li img{  width:100%;  height:100%;  display:block;  overflow: hidden;  }
+
+    /*屏幕下方标题部分*/
+    .carouselContentBottom{
+        width:100%;height:30px;margin-top:320px;background-color: red;position: absolute;/*positon:absolute;表示绝对定位，不占空间*/
+        left: 0;  bottom: 0;  /*父元素设置了一个相对定位，而且设置了超出隐藏overflow: hidden;
+                                所以这个标题部分会超出来，所以要设置left: 0;  bottom: 0;还原*/
+        background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0 !important;
+        border-radius: 0px 0px 8px 8px;
+        opacity: 0.7;
+        }
+
+    /*屏幕下方标题左边标题部分*/
+    .carouselContentBottomTitle p{margin-left:20px;margin-top:5px;font-size: 15px;font-weight:bold;
+                        color:white;float: left;}
+    /*屏幕下方右边小圆点部分*/
+    .carouselContentBottom ul{float:right;width:12%;height:15px;margin: 9px 2% 0 0;}
+    .carouselContentBottom ul li{width:12px;height:12px;margin-left: 5px;background-color:white;
+                                /*设置div为圆*/
+                                -webkit-border-radius: 50px;
+                                -moz-border-radius: 50px;
+                                -o-border-radius: 50px;
+                                border-radius: 50px;
+    }
+
+    /*轮播右下方黄色的小圆点*/
+.carouselContentBottom .active{background-color: #F1CB20;}
+
+
+/*正文电脑数码部分*/
+.indexComputer{width:100%;height:auto;margin:0 auto;} /*#F8F8F8*/  /*删高度*/
+/*标题部分*/
+.indexComputerTitle{width:100%;margin-top: 40px;}
+#indexComputerTitleOne{height:24px;font-size:20px;text-align:center;color:black;position: relative;}
+#indexComputerTitleTwo{height:24px;font-size:18px;text-align:center;color:#666666;position: relative;}
+/*下方绿色边框*/
+.indexComputerBorder{width:4%;height:1px;margin:10px auto;background-color: #4EC487;}
+
+/*正文商品部分*/
+.indexComputerContent{width:90%;height:auto;margin:auto;background-color: pink;}
+/*商品详情*/
+.indexComputerContentGoods{width:20%;height:300px;margin-left:50px;margin-top:40px;float: left;
+                    position: relative;border:1px solid #CACACA;}
+.indexComputerContentGoods:hover{border:1px solid #4EC487;}
+/*商品图片部分*/
+.indexComputerContentGoodsImg{width:80%;height:60%;
+    margin: auto; position: absolute;top:20px;left:0;right:0;}
+/*商品标题部分*/
+.indexComputerContentGoodsTitle{width:100%;height:25px;margin-top:220px;}
+.indexComputerContentGoodsTitle p{font-size: 16px;color:black;text-align: center;}
+/*价格 加入购物车部分*/
+.indexComputerContentGoodsPrice{width:100%;height:30px;margin-top:10px;}
+.goodsPrice{float: left;font-size: 18px;padding-left: 5px;margin-top:3px;}
+.goodsShopcar{float: right;margin-right:10px;width:80px;height:30px;border: 1px solid #4EC487;position: relative;}
+.goodsShopcar a{display:block;width:100%;height:100%;color:#4EC487;text-decoration: none;text-align: center;padding-top: 3px;}
+.goodsShopcar:hover{background-color:#4EC487;}
+.goodsShopcar a:hover{color:white;text-decoration: none;}
+
+
+/*正文衣服食品部分*/
+.indexClothes{width:100%;height:auto;margin:40px auto auto auto;padding-bottom:60px;background-color: #EEEFE9;} /*#F8F8F8*/  /*删高度*/
+/*标题部分*/
+.indexClothesTitle{width:100%;margin-top: 40px;}
+#indexClothesTitleOne{height:24px;font-size:20px;text-align:center;color:black;position: relative;}
+#indexClothesTitleTwo{height:24px;font-size:18px;text-align:center;color:#666666;position: relative;}
+/*下方绿色边框*/
+.indexClothesBorder{width:4%;height:1px;margin:10px auto;background-color: #4EC487;}
+
+/*正文商品部分*/
+.indexClothesContent{width:90%;height:auto;margin:auto;background-color: pink;}
+/*商品详情*/
+.indexClothesContentGoods{width:20%;height:300px;margin-left:50px;margin-top:40px;float: left;
+    position: relative;border:1px solid #CACACA;}
+.indexClothesContentGoods:hover{border:1px solid #4EC487;}
+/*商品图片部分*/
+.indexClothesContentGoodsImg{width:80%;height:60%;
+    margin: auto; position: absolute;top:20px;left:0;right:0;}
+/*商品标题部分*/
+.indexClothesContentGoodsTitle{width:100%;height:25px;margin-top:220px;}
+.indexClothesContentGoodsTitle p{font-size: 16px;color:black;text-align: center;}
+/*价格 加入购物车部分*/
+.indexClothesContentGoodsPrice{width:100%;height:30px;margin-top:10px;}
+.indexClothesgoodsPrice{float: left;font-size: 18px;padding-left: 5px;margin-top:3px;}
+.indexClothesgoodsShopcar{float: right;margin-right:10px;width:80px;height:30px;border: 1px solid #4EC487;position: relative;}
+.indexClothesgoodsShopcar a{display:block;width:100%;height:100%;color:#4EC487;text-decoration: none;text-align: center;padding-top: 3px;}
+.indexClothesgoodsShopcar:hover{background-color:#4EC487;}
+.indexClothesgoodsShopcar a:hover{color:white;text-decoration: none;}

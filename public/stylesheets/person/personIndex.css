@@ -1,0 +1,14 @@
+
+/*个人主页部分*/
+.personIndex{width:800px;height:350px;}
+/*个人上边的头像部分*/
+.personIndexContent{width:800px;height:150px;border:1px solid #CECECE;border-radius: 10px;}
+.personIndexContentImg{width:100px;height:100px;margin-top: 20px;margin-left:40px;
+    position: absolute;border-radius: 50%;overflow: hidden;border:1px solid #CECECE;}
+.personIndexContentWord{width:400px;height:80px;margin-top: 40px;margin-left:180px;}
+.personIndexContentWord p{font-size: 18px;}
+.personIndexContentWord p span{margin-left: 20px;}
+#personUserName{font-weight: bold;}
+/*个人下边天气部分*/
+.personIndexWeather{width:400px;height:150px;margin-left:200px;margin-top:20px;border:1px solid #CECECE;border-radius: 10px;}
+.personIndexWeather iframe{margin-left: 50px;margin-top: 20px;}

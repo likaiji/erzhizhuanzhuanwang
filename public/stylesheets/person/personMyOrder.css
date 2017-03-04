@@ -1,0 +1,33 @@
+
+/*我的订单部分部分*/
+.myOrder{width:800px;height:700px;border:1px solid #CECECE;border-radius: 10px;}
+.myOrderTitle{width:750px;height:40px;margin: auto;border-bottom: 1px solid #CECECE;}
+.myOrderTitle p{font-size: 18px;padding-top: 6px;padding-left:10px;font-weight: bold;}
+.myOrderaContent{width:400px;height:300px;margin-top:20px;margin-left: 30px;}
+.myOrderaContent p{font-size: 16px;padding-top: 10px;padding-left: 10px;}
+/*订单标题*/
+.goodsTitle{width:750px;height:40px;background-color: #E7E7E7;margin: 0 auto;margin-top: 20px;border:1px solid #CECECE;}
+.goodsTitle ul li{float: left;font-size: 18px;}
+#goodsTitleName{width:210px;text-align: center;padding-top: 5px;}
+#goodsTitleNumber{width:150px;text-align: center;padding-top: 5px;}
+#goodsTitlePrice{width:180px;text-align: center;padding-top: 5px;}
+#goodsTitleStatus{width:60px;text-align: center;padding-top: 5px;}
+#goodsTitleOperate{width:140px;text-align: center;padding-top: 5px;}
+/*订单表格*/
+.goodsTable{width:750px;height:auto;margin: 0 auto;margin-top:5px;}
+/*表格第一个图片部分*/
+#goodsTablePicture{width:220px;height:70px;}    /*商品图片这个表格*/
+.goodsTablePictureImg{width:100px;height:60px;position: absolute;}
+.goodsTablePictureContent{width:100px;height:60px;margin-left:110px;}
+/*表格第二个订单号部分*/
+#goodsTableOrderNumber{width:160px;height:70px;}   /*商品订单号这个表格*/
+#goodsTableOrderNumber p{text-align: center;}
+/*表格第三个商品价格部分*/
+#goodsTablePrice{width:123px;height:70px;}     /*商品价格这个表格*/
+#goodsTablePrice p{text-align: center;}
+/*表格第四个商品状态部分*/
+#goodsTableStatus{width:123px;height:70px;}    /*商品状态这个表格*/
+#goodsTableStatus p{text-align: center;}
+/*表格第五个商品操作部分*/
+#goodsTableOperate{width:123px;height:70px;}    /*商品操作这个表格*/
+.goodsTableOperateBtn{width:80px;height:30px;margin: auto;background-color: red;}

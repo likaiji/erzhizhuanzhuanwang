@@ -1,0 +1,13 @@
+.loginBox{width:100%;height:520px;
+            background-image: url(../images/backgroundimages/bgtwo.jpg);
+            background-size:100% 100%; /*指定背景图像的大小：*/
+            background-repeat:no-repeat;
+    /*background-attachment: fixed; /!*这样背景图片就会固定住，不会因页面滚动而重复*!/*/
+}
+/*包裹bootstrap框的div*/
+.loginBoxContent{width:400px;height:280px;background-color: #4EC487;margin-left: 750px;margin-top: 100px;opacity: 0.8;}
+/*设置form表单上边距*/
+.formMarginTop{padding-top: 10px;}
+
+/*用户名或密码错误里面字体*/
+#userNameError{font-size: 10px;color:red;padding-top: 10px; display: none;}

@@ -1,0 +1,33 @@
+
+/*模态框css*/
+.goodCarsMotai{
+    text-align: center;
+}
+.goodCarsMotai input{
+    border:1px solid #808080;
+}
+
+/*大的div*/
+.computerBox{width:100%;height:auto;background-color: #F8F8F8;}
+/*商品详情div*/
+.computerArea{width:100%;height:900px;margin-top:50px;margin-bottom:50px;background-color: white;}
+/*标题*/
+.computerTitle{width:100%;height:50px;}
+.computerTitle p{font-size: 20px;padding-top:10px;text-align: center;}
+/*商品详情*/
+.computerGoods{width:20%;height:300px;margin-left:50px;margin-top:40px;float: left;
+            position: relative;border:1px solid #CACACA;}
+.computerGoods:hover{border:1px solid  #4EC487;}
+/*商品图片部分*/
+.computerGoodsImg{width:80%;height:60%;background-color: grey;
+    margin: auto; position: absolute;top:20px;left:0;right:0;}
+/*商品标题部分*/
+.computerGoodsTitle{width:100%;height:25px;margin-top:220px;}
+.computerGoodsTitle p{font-size: 16px;color:black;text-align: center;}
+/*价格 加入购物车部分*/
+.computerGoodsPrice{width:100%;height:30px;margin-top:10px;}
+.goodsPrice{float: left;font-size: 18px;padding-left: 5px;margin-top:3px;}
+.goodsShopcar{float: right;margin-right:10px;width:80px;height:30px;border: 1px solid #4EC487;position: relative;}
+.goodsShopcar a{display:block;width:100%;height:100%;color:#4EC487;text-decoration: none;text-align: center;padding-top: 3px;}
+.goodsShopcar:hover{background-color:#4EC487;}
+.goodsShopcar a:hover{color:white;text-decoration: none;}

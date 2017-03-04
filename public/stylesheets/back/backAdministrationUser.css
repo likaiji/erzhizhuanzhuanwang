@@ -1,0 +1,70 @@
+/*右边大的div*/
+.backUser{
+    margin-top: -60px;
+    width:1030px;
+    height:500px;
+    padding-bottom: 40px;
+    background-color: #F2F4F8;
+}
+/*设置表格样式*/
+.backUser table{
+    display: block;
+    padding-left: 10px;
+    text-align: center;
+    border-collapse: collapse;         /*为表格设置合并边框模型*/
+    font-family: Futura, Arial, sans-serif;
+}
+caption {
+    text-align: center;
+    font-size: 25px;
+    margin:auto;
+}
+th,td {
+    padding: .65em;
+}
+th {
+    background: #555;
+    border: 1px solid #777;
+    color: #fff;
+}
+td{
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1px solid#777;
+}
+th:nth-child(1){
+    text-align: center;
+}
+th:nth-child(2){
+    text-align: center;
+}
+th:nth-child(3){
+    text-align: center;
+}
+th:nth-child(4){
+    text-align: center;
+}
+th:nth-child(5){
+    text-align: center;
+}
+th:nth-child(6){
+    text-align: center;
+}
+th:nth-child(7){
+    text-align: center;
+}
+th:nth-child(8){
+    text-align: center;
+}
+th:nth-child(9){
+    text-align: center;
+}
+th:nth-child(10){
+    text-align: center;
+}
+th:nth-child(11){
+    text-align: center;
+}
+tr:nth-child(odd) {
+    background: #ccc;
+}

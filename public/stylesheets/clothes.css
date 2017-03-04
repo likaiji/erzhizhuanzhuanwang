@@ -1,0 +1,34 @@
+
+/*模态框css*/
+.goodCarsMotai{
+    text-align: center;
+}
+.goodCarsMotai input{
+    border:1px solid #808080;
+}
+
+
+/*大的div*/
+.clothesBox{width:100%;height:auto;background-color: #F8F8F8;}
+/*商品详情div*/
+.clothesArea{width:100%;height:900px;margin-top:50px;margin-bottom:50px;background-color: white;}
+/*标题*/
+.clothesTitle{width:100%;height:50px;}
+.clothesTitle p{font-size: 20px;padding-top:10px;text-align: center;}
+/*商品详情*/
+.clothesGoods{width:20%;height:300px;margin-left:50px;margin-top:40px;float: left;
+    position: relative;border:1px solid #CACACA;}
+.clothesGoods:hover{border:1px solid  #4EC487;}
+/*商品图片部分*/
+.clothesGoodsImg{width:80%;height:60%;
+    margin: auto; position: absolute;top:20px;left:0;right:0;}
+/*商品标题部分*/
+.clothesGoodsTitle{width:100%;height:25px;margin-top:220px;}
+.clothesGoodsTitle p{font-size: 16px;color:black;text-align: center;}
+/*价格 加入购物车部分*/
+.clothesGoodsPrice{width:100%;height:30px;margin-top:10px;}
+.goodsPrice{float: left;font-size: 18px;padding-left: 5px;margin-top:3px;}
+.goodsShopcar{float: right;margin-right:10px;width:80px;height:30px;border: 1px solid #4EC487;position: relative;}
+.goodsShopcar a{display:block;width:100%;height:100%;color:#4EC487;text-decoration: none;text-align: center;padding-top: 3px;}
+.goodsShopcar:hover{background-color:#4EC487;}
+.goodsShopcar a:hover{color:white;text-decoration: none;}

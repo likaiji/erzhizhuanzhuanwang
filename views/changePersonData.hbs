@@ -1,0 +1,69 @@
+{{#section 'changePersonDataCss'}}
+    <link rel="stylesheet" href="stylesheets/person/changePersonData.css"/>
+{{/section}}
+
+
+<!--修个人资料部分-->
+<div class="changePersonalData" id="changePersonalData">
+    <!--标题-->
+    <div class="changePersonalDataTitle">
+        <p>修改个人资料</p>
+    </div>
+    <!--详细-->
+    <div class="changePersonalDataContent">
+        <p>用户名：<span>李开吉</span></p>
+        <p>邮&nbsp;&nbsp;&nbsp;箱：<span><input class="changePersonalDataContentInput" type="text" name="changePersonalDataContentEmail" value="1104310490@qq.com"/></span></p>
+        <p>性&nbsp;&nbsp;&nbsp;别：
+            <label><input name="inputSex" type="radio" value="male" checked="checked"/>男</label>
+            <label><input name="inputSex" type="radio" value="fmale" />女</label>
+            <label><input name="inputSex" type="radio" value="notKnow" />保密</label>
+        </p>
+        <p>系&nbsp;&nbsp;&nbsp;别：<span>
+                            <select class="changePersonalDataContentInput" name="changePersonalDataContentDepartment" id="changePersonalDataContentDepartment">
+                                <option>数学与信息工程系</option>
+                                <option>旅游与服务管理系</option>
+                                <option>学前教育学院</option>
+                                <option>教师教育学院</option>
+                                <option>文学与传媒系</option>
+                                <option>生物与化学信息工程系</option>
+                                <option>经济与工商管理系</option>
+                                <option>美术系</option>
+                                <option>外文系</option>
+                            </select>
+                        </span>
+        </p>
+        <p>宿&nbsp;&nbsp;&nbsp;舍：<span>
+                <select class="changePersonalDataContentSushe" id="countryid" onchange="add1(this.value);">
+                    <option value="南山校区">南山校区</option>
+                    <option value="学府校区">学府校区</option>
+                </select>
+                <select class="changePersonalDataContentSushe" id="cityid" onchange="func();">
+                    <option value="1栋">1栋</option>
+                    <option value="2栋">2栋</option>
+                    <option value="3栋">3栋</option>
+                    <option value="4栋">4栋</option>
+                    <option value="5栋">5栋</option>
+                    <option value="6栋">6栋</option>
+                    <option value="7栋">7栋</option>
+                    <option value="8栋">8栋</option>
+                    <option value="9栋">9栋</option>
+                    <option value="10栋">10栋</option>
+                    <option value="11栋">11栋</option>
+                    <option value="12栋">12栋</option>
+                    <option value="13栋">13栋</option>
+                    <option value="14栋">14栋</option>
+                    <option value="15栋">15栋</option>
+                    <option value="16栋">16栋</option>
+                    <option value="17栋">17栋</option>
+                </select>
+            </span>
+        </p>
+        <p>Q&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q：<span><input class="changePersonalDataContentInput" type="text" name="changePersonalDataContentQQ" value="1104310490"/></span></p>
+        <p>电&nbsp;&nbsp;&nbsp;话：<span><input class="changePersonalDataContentInput" type="text" name="changePersonalDataContentPhone" value="13212528281"/></span></p>
+        <p><button type="button">保存</button></p>
+    </div>
+</div>
+
+{{#section 'changePersonDataJs'}}
+    <script src="javascript/person/changePersonData.js"></script>  <!--修改个人资料js-->
+{{/section}}

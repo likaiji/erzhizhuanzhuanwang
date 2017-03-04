@@ -1,0 +1,42 @@
+{{#section 'computerCss'}}
+    <link rel="stylesheet" href="stylesheets/computer.css"/>
+{{/section}}
+
+<!--大的div-->
+<div class="computerBox" ng-controller="cqueComputer as Ctrl">
+    <div class="container">
+        <!--商品详情div-->
+        <div class="computerArea">
+
+            <!--标题-->
+            <div class="computerTitle">
+                <p>电脑数码</p>
+                <div style="width:50px;height:2px;background-color: #4EC487;margin: auto;"></div>
+            </div>
+
+            <!--商品详情-->
+            <div class="computerGoods" ng-repeat="navData in Ctrl.Navcomputerdata track by $index">
+                    <!--商品图片部分-->
+                    <div class="computerGoodsImg">
+                        <a href="/productContent?sss=\{{navData.url}}">
+                            <img src="\{{navData.img}}" width="100%" height="100%" alt="dell"/>
+                        </a>
+                    </div>
+                    <!--商品标题部分-->
+                    <div class="computerGoodsTitle">
+                        <p class="computerCarsTitle">\{{navData.title}}</p>
+                    </div>
+                    <!--价格 加入购物车部分-->
+                    <div class="computerGoodsPrice">
+                        <div class="goodsPrice">\{{navData.price}}</div>
+                        <div class="goodsShopcar" data-toggle="modal" data-target="#myModal"><a href="#">加入购物车</a></div>
+                    </div>
+            </div>
+        </div>
+     </div>
+</div>
+
+{{#section 'computerJs'}}
+    <script src="javascript/computer.js"></script>
+{{/section}}
+

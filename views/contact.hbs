@@ -1,0 +1,106 @@
+{{#section 'contactCss'}}
+    <link rel="stylesheet" href="stylesheets/contact.css"/>
+    <!--引用百度地图API-->
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+{{/section}}
+
+<!--大的div-->
+<div class="contactBox">
+        <!--上面地图部分-->
+        <div class="contactTop">
+            <div class="container"> <!--居中-->
+                <p id="contactTopContact">联系我们</p>
+                <div style="width:50px;height:2px;background-color: #4EC487;margin: auto;"></div>
+                <!--左边地图部分-->
+                <div class="contactTopMap" id="dituContent">
+
+                </div>
+                <!--右边联系方式部分-->
+                <div class="contactTopPhone">
+                    <p id="contactTopPhoneTitle">联系方式</p>
+                    <!--手机部分-->
+                    <div class="contactTopPhoneBox">
+                        <div style="width:40px;height:40px;background-color: #4EC487;position: absolute;">
+                            <img src="images/phone.png" width="100%" height="100%" alt="phone"/>
+                        </div>
+                        <p>手机：13212528281</p>
+                    </div>
+                    <!--邮箱部分-->
+                    <div class="contactTopPhoneBox">
+                        <div style="width:40px;height:40px;background-color: #4EC487;position: absolute;">
+                            <img style="margin-left: 6px;margin-top: 4px;" src="images/email.png" width="70%" height="70%" alt="email"/>
+                        </div>
+                        <p>邮箱：1104310490@qq.com</p>
+                    </div>
+                    <!--地址部分-->
+                    <div class="contactTopPhoneBox">
+                        <div style="width:40px;height:40px;background-color: #4EC487;position: absolute;">
+                            <img style="margin-left: 6px;margin-top: 4px;" src="images/address.png" width="70%" height="70%" alt="address"/>
+                        </div>
+                        <p>地址：重庆第二师范学院南山校区</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--下面发邮件部分-->
+        <div class="contactBottom"   ng-controller="cqueSendEmail as Ctrl">
+            <div class="container"> <!--居中-->
+                <p id="contactBottomContact">给我们发邮件</p>
+                <div style="width:50px;height:2px;background-color: #4EC487;margin: auto;"></div>
+                <!--发邮件框-->
+                <div class="contactBottomSendEmail">
+
+                    <form action="/sendMail" method="post" class="form-horizontal formMarin" name="submitForm">
+                        <!--定义第一个输入框-->
+                        <div class="form-group">
+                            <div class="col-sm-4">
+                                <input type="email" id="userEmail"  class="form-control"
+                                       ng-minlength="5"  required   ng-model="userEmail"
+                                       placeholder="请留下您的邮箱吧" name="userEmail"/>
+                            </div>
+                        </div>
+                        <!--定义第二个输入框-->
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <textarea class="form-control suggestionText"
+                                          ng-minlength="10"   required    ng-model="userText"
+                                          id="userText" rows="5" placeholder="请留下您的宝贵意见" name="userText"></textarea>
+                            </div>
+                        </div>
+                        <!--提交按钮-->
+                        <div class="form-group">
+                            <div class="col-sm-3">
+                                <input type="submit" ng-disabled="submitForm.$invalid" class="btn btn-default suggestionSubmit"  value="发送"/>
+                            </div>
+                        </div>
+                     </form>
+
+                </div>
+
+             </div>
+        </div>
+
+</div>
+
+
+{{#section 'contactJs'}}
+    <script src="javascript/contactMap.js"></script>  <!--百度地图部分-->
+    <script>
+        //更改导航栏
+        document.getElementById("cqueContact").style.color="#4EC487";
+
+        var app=angular.module('CQUE',[]); //定义ng-app
+        app.controller('cqueSendEmail',['$http',function($http){
+//        alert("aaa");  //在这里最直接写表示运行angular是就会直接运行
+            var self=this;
+        }]);
+    </script>
+{{/section}}
+
+

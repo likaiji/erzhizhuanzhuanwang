@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>二师转转网</title>
+    <link type="text/css" rel="stylesheet" href="stylesheets/reset.css">
+    <link type="text/css" rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="stylesheets/main.css"/><!--顶部导航栏 底部css-->
+    <link rel="stylesheet" href="stylesheets/person/personMain.css"/>  <!--左边导航栏css-->
+    {{{_sections.personIndexCss}}}  <!--个人首页css-->
+    {{{_sections.personDataCss}}}  <!--个人资料css-->
+    {{{_sections.changePersonDataCss}}} <!--修改个人资料css-->
+    {{{_sections.personMyOrderCss}}} <!--我的订单css-->
+</head>
+<body ng-app="person">
+
+
+<!--定义一个导航栏-->
+<nav class="navbar navbar-default u-nav-bar">
+    <!--定义一个容器-->
+    <div class="container">
+        <!--定义一行-->
+        <div class="row">
+            <!--定义左边的的logo-->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    <div class="logo-pc-div app-none">
+                        <figure class="ac-familybrowser-icon"></figure>  <!--使用 <figure> 元素标记文档中的一个图像-->
+                    </div>
+                </a>
+            </div>
+
+            <!--定义右边的导航框-->
+            <div class="collapse navbar-collapse topBarRight">
+                <ul class="nav navbar-nav navbar-nav-ul">
+                    <li class="click"><a href="/"><span>首页</span></a></li>
+                    <li><a href="/computer"><span>电脑数码</span></a></li>
+                    <li><a href="/clothes"><span>衣服书籍</span></a></li>
+                    <li><a href="/contact"><span>联系我们</span></a></li>
+                </ul>
+
+                <!--靠右边的表单系统-->
+                <form class="navbar-form navbar-right navbar-form-link">
+                    <a class="pc-none" href="/login">登录</a>
+                    <a class="pc-none" href="/register">注册</a>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!--person大的div-->
+<div class="person">
+    <div class="container">
+        <!--左边部分-->
+        <div class="personLeft">
+            <!--标题-->
+            <div class="personLeftTitle">
+                <p>个人中心</p>
+            </div>
+            <!--分类-->
+            <div class="personLeftUl">
+                <ul>
+                    <li id="personIndexList">
+                        <div class="leftBox" id="personIndexleftBox"></div>
+                        <span><a href="/personIndex">个人主页</a></span>
+                    </li>
+                    <li id="personalDataList">
+                        <div class="leftBox" id="personalDataleftBox"></div>
+                        <span><a href="/personData">个人资料</a></span>
+                    </li>
+                    <li id="changePersonalDataList">
+                        <div class="leftBox" id="changePersonalDataleftBox"></div>
+                        <span><a href="/changePersonData">修改个人资料</a></span>
+                    </li>
+                    <li id="myOrderList">
+                        <div class="leftBox" id="myOrderleftBox"></div>
+                        <span><a href="/personMyOrder">我的订单</a></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--右边部分-->
+        <div class="personRight">
+            {{{body}}}      <!--表示替换，这里的body不能替换成其他的-->
+        </div>
+    </div>
+</div>
+
+<!--底部部分-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <!--qq二维码部分-->
+            <div class="qqerweima" id="qqerweima">
+                <div class="qqerweimaImg">
+                    <img src="images/qqerweima.png" width="100%" height="100%" alt="qqerweima"/>
+                </div>
+            </div>
+            <!--微信二维码部分-->
+            <div class="wechaterweima" id="wechaterweima">
+                <div class="wechaterweimaImg">
+                    <img src="images/wechaterweima.png" width="100%" height="100%" alt="wechaterweima"/>
+                </div>
+            </div>
+            <!--左边部分-->
+            <div class="footerLeft">
+                <p>Copyright &copy; 2017.kaiji Li All rights reserved.</p>
+            </div>
+            <!--右边部分-->
+            <div class="footerRight">
+                <img id="qq" src="images/qq.png" width="40" height="40" alt="qq"/>
+                <img id="wechat" src="images/wechat.png" width="40" height="40" alt="wechat"/>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+{{{_sections.personIndexJs}}}  <!--个人首页js-->
+{{{_sections.personDataJs}}}  <!--个人资料js-->
+{{{_sections.changePersonDataJs}}}  <!--修改个人资料js-->
+{{{_sections.personMyOrderJs}}}  <!--我的订单js-->
+<script src="javascript/bottom.js"></script>  <!--页脚二维码js-->
+</body>
+</html>

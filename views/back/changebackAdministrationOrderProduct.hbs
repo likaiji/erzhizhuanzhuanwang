@@ -1,0 +1,37 @@
+{{#section 'changebackAdministrationOrderProductCss'}}
+    <link rel="stylesheet" href="stylesheets/back/changebackAdministrationOrderProduct.css"/>
+{{/section}}
+
+
+<!--右边大的div-->
+<div class="backUser">
+    <table>
+        <!--标题-->
+        <caption>修改订单</caption>
+        <tr>
+            <th>修改的订单编号</th>
+            <th>修改商品名称</th>
+            <th>修改买家姓名</th>
+            <th>修改买家电话号码</th>
+            <th>修改总价</th>
+            <th>修改买家地址</th>
+            <th>修改订单状态</th>
+            <th>操作</th>
+        </tr>
+        <!--行数-->
+        <tr>
+            <td><input type="text" name="changeNumber" id="changeNumber"/></td>
+            <td><input type="text" name="changeProductName" id="changeProductName"/></td>
+            <td><input type="text" name="changeUserName" id="changeUserName"/></td>
+            <td><input type="text" name="changeUserPhone" id="changeUserPhone"/></td>
+            <td><input type="text" name="changeTotalPrice" id="changeTotalPrice"/></td>
+            <td><input type="text" name="changeAddress" id="changeAddress"/></td>
+            <td><input type="text" name="changeOrderStatus" id="changeOrderStatus"/></td>
+            <td><button class="saveChange">保存</button></td>
+        </tr>
+    </table>
+</div>
+
+{{#section 'changebackAdministrationOrderProductJs'}}
+    <script src="javascript/back/changebackAdministrationOrderProduct.js"></script>
+{{/section}}

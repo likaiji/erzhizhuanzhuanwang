@@ -1,0 +1,53 @@
+
+/*模态框css*/
+.goodCarsMotai{
+    text-align: center;
+}
+.goodCarsMotai input{
+    border:1px solid #808080;
+}
+
+/*大的div*/
+.productContentBox{width:100%;background-color: #F8F8F8;}
+
+/*商品详情区域*/
+.productContentArea{width:100%;height:1600px;background-color: white;margin-top: 50px;margin-bottom: 50px;
+    position: relative;border:1px solid #E8E8E8;border-radius: 5px;}
+
+/*顶部图片，标题部分*/
+.productContentAreaTitle{width:1000px;height:700px; margin:30px auto;position: absolute;left:0;right:0;  }
+
+/*左边图片部分*/
+.productContentAreaTitleImg{width:400px;height:500px;float: left;}
+/*大图片部分*/
+.productContentAreaTitleImgBig{width:400px;height:300px;border:1px solid #E8E8E8; overflow: hidden;}
+.productContentAreaTitleImgBig ul{width:300%;height:100%;transition: all 0.5s;/*设置图片左右移动效果*//*宽度设为400%，因为有4张图片，可以平铺满*/}
+.productContentAreaTitleImgBig ul li{float: left;  width:33.3%; /*相对于上一层对的carouselContent ul是25%，四张图片*/
+    height:100%; overflow: hidden;}
+.productContentAreaTitleImgBig ul li img{  width:100%;  height:100%;  display:block;  overflow: hidden;  }
+/*下方小图片部分*/
+.productContentAreaTitleImgLittle{width:400px;height:150px;margin-top: 20px;}
+.productContentAreaTitleImgLittleOne{width:125px;height:150px;background-color: yellow;position: absolute;
+                    border:1px solid #E8E8E8;}
+.productContentAreaTitleImgLittleTwo{width:125px;height:150px;margin-left:135px;background-color: yellow;
+                    border:1px solid #E8E8E8;position: absolute;}
+.productContentAreaTitleImgLittleThree{width:125px;height:150px;margin-left:270px;background-color: yellow;
+                    border:1px solid #E8E8E8;position: absolute;}
+
+
+/*右边标题部分*/
+.productContentAreaTitleContent{width:580px;height:500px;float: right;}
+.productContentAreaTitleContentTitle{width:580px;height:auto;margin-top:20px;}
+.productContentAreaTitleContentTitle p{font-size: 18px;padding-left: 20px;font-weight: bold;}
+.productContentAreaTitleContentDetails{width:550px;height:120px;margin:10px auto;}
+.productContentAreaTitleContentDetails p{font-size: 16px;color:#4EC487;}
+.productContentAreaTitleContentPrice{width:550px;height:60px;margin:10px auto;}
+.productContentAreaTitleContentPrice p{font-size: 18px;font-weight: bold;}
+.productContentAreaTitleContentSubmit{width:100px;height:40px;margin-top:100px;margin-left: 50px;}
+.productContentAreaTitleContentSubmit button{width:100%;height:100%;background-color:#4EC487;color:white;}
+
+/*下方图片部分*/
+.productContentAreaImg{width:500px;height:900px;
+    margin:0 auto;position: absolute;left:0;right:0;margin-top: 600px;
+}
+.productContentAreaImg img{margin-top: 10px;}

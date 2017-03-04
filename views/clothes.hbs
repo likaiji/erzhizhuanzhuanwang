@@ -1,0 +1,42 @@
+{{#section 'clothesCss'}}
+    <link rel="stylesheet" href="stylesheets/clothes.css"/>
+{{/section}}
+
+<!--大的div-->
+<div class="clothesBox" ng-controller="cqueClothes as Ctrl">
+    <div class="container">
+        <!--商品详情div-->
+        <div class="clothesArea">
+
+            <!--标题-->
+            <div class="clothesTitle">
+                <p>衣服书籍</p>
+                <div style="width:50px;height:2px;background-color: #4EC487;margin: auto;"></div>
+            </div>
+
+            <!--商品详情-->
+            <div class="clothesGoods" ng-repeat="navData in Ctrl.NavClothesdata track by $index">
+                <!--商品图片部分-->
+                <div class="clothesGoodsImg">
+                    <a href="/productContent?sss=\{{navData.url}}">
+                         <img src="\{{navData.img}}" width="100%" height="100%" alt="dell"/>
+                    </a>
+                </div>
+                <!--商品标题部分-->
+                <div class="clothesGoodsTitle">
+                    <p class="clothescarsTitle">\{{navData.title}}</p>
+                </div>
+                <!--价格 加入购物车部分-->
+                <div class="clothesGoodsPrice">
+                    <div class="goodsPrice">\{{navData.price}}</div>
+                    <div class="goodsShopcar" data-toggle="modal" data-target="#myModal"><a href="#">加入购物车</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#section 'clothesJs'}}
+    <script src="javascript/clothes.js"></script>
+{{/section}}
+

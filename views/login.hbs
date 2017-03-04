@@ -1,0 +1,61 @@
+{{#section 'loginCss'}}
+    <!--handlebars默认在public下,所以直接引用-->
+    <link rel="stylesheet" href="stylesheets/login.css"/>
+{{/section}}
+
+<!--登录框大的div-->
+<div class="loginBox" id="loginBox">
+    <!--container 居中-->
+    <div class="container">
+        <!--包裹bootstrap框的div-->
+        <div class="loginBoxContent">
+            <p style="font-size: 20px;text-align: center;padding-top: 10px;">账号密码登录</p>
+            <!--登录框   onsubmit 事件会在表单中的确认按钮被点击时发生。-->
+            <form action="/personIndex" name="submitForm" class="form-horizontal formMarginTop" role="form"
+                  method="post" onSubmit="return check();">
+                <!--定义一行用户名-->
+                <div class="form-group">
+                    <label for="userName" class="col-sm-3 control-label">用户名</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="submitUserName" id="submitUserName" placeholder="用户名"/>
+                    </div>
+                </div>
+
+                <!--定义一行密码-->
+                <div class="form-group">
+                    <label for="passWord" class="col-sm-3 control-label">密 码</label>
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control" id="passWord" name="submitPassword" placeholder="密码"/>
+                    </div>
+                </div>
+
+
+                <!--一天免登陆-->
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-3">
+                        <div class="checkbox">
+                            <label><input type="checkbox"/>一天免登录</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--登录按钮-->
+                <div class="form-group">
+                    <div class="col-sm-10 col-md-offset-3">
+                        <button type="submit" class="col-sm-4 btn btn-default" id="submitLogin">登录</button>
+                        <div class="col-sm-8">
+                            <label id="userNameError" >用户名或密码错误</label>
+                        </div>
+                    </div>
+                </div>
+
+             </form>
+         </div>
+
+     </div>
+</div>
+
+{{#section 'loginJs'}}
+    <script src="javascript/login.js"></script>  <!--登录页js-->
+{{/section}}

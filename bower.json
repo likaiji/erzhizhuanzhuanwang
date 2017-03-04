@@ -1,0 +1,26 @@
+{
+  "name": "demotwo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "likaiji"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1",
+    "angular": "^1.6.1",
+    "bootstrap": "^3.3.7"
+  }
+}

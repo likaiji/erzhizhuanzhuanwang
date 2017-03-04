@@ -1,0 +1,7 @@
+/*个人资料部分*/
+.personalData{width:800px;height:400px;border:1px solid #CECECE;border-radius: 10px;}
+.personalDataTitle{width:750px;height:40px;margin: auto;border-bottom: 1px solid #CECECE;}
+.personalDataTitle p{font-size: 18px;padding-top: 6px;padding-left:10px;font-weight: bold;}
+.personalDataContent{width:400px;height:300px;margin-top:20px;margin-left: 30px;}
+.personalDataContent p{font-size: 16px;padding-top: 10px;padding-left: 10px;}
+
