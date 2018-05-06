@@ -4,6 +4,6 @@
 module.exports={
     QQMail:{
         user:'1104310490@qq.com',
-        password:'lhjnokcrjmgdjgig'
+        password:'fababxrwlsqvfgfd'
     }
 };

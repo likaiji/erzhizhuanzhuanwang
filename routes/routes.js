@@ -33,6 +33,11 @@ router.get('/computer',function(req,res){
     res.render('computer');////表示将computer.hbs的内容加入到main母版中
 });
 
+// mongoDb 获取数据
+router.get('/getMongoDbData',function(req,res){
+    res.render('getMongoDbData');
+});
+
 //当地址栏中输入  localhost:2100/clothes时，就会显示这个界面的内容
 router.get('/clothes',function(req,res){
     res.render('clothes');////表示将clothes.hbs的内容加入到main母版中
